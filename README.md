@@ -125,6 +125,9 @@ For the given example, the conversion to EUR gives us
 
 The result as JSON shows that for every placement, only creatives with bigger prices are selected. 
 
+    rake import\[file.xml\] # Escaping the brackets if zshell is used
+    rake import # using the default file.xml
+
 ```json
 {
   "placement": [

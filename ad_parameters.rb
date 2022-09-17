@@ -77,5 +77,3 @@ class AdParameters
     result
   end
 end
-
-AdParameters.new('./file.xml').execute
