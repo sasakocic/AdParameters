@@ -259,3 +259,40 @@ The result as JSON shows that for every placement, only creatives with bigger pr
 }
 ```
 
+## Webserver
+
+Webserver is implemented with Sinatra as it is light-weight and can be done with one file.
+
+Invocation of the server is with `ruby webserver.rb`
+    
+Result can be checked with like http://127.0.0.1:4567/placements/plc-1/floor/3.5
+
+```json
+{
+  "placement": [
+    {
+      "id": "plc-1",
+      "creative": [
+        {
+          "id": "Video-1",
+          "price": 6.4567
+        },
+        {
+          "id": "Video-7",
+          "price": 5.12211275
+        },
+        {
+          "id": "Video-12",
+          "price": 16.4567
+        },
+        {
+          "id": "Video-25",
+          "price": 8.36876106
+        }
+      ]
+    }
+  ]
+}
+```
+
+These are creatives with a price > 3.5
