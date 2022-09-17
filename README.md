@@ -32,7 +32,8 @@ into an XML files. The format of the xml is very simple and it looks like the fo
     <Placement id="plc-7" floor="0" currency="EUR"/>
     <Placement id="plc-8" floor="1.3456" currency="USD"/>
 </Placements>
-- ``` 
+```
+
 Here you see that creative has three attributes:
 - the id which is unique for each creative
 - the price that indicates how worth is this creative
@@ -107,20 +108,20 @@ this algorithm will not be faster, hence the unnecessary complexity is avoided.
 
 For the given example, the conversion to EUR gives us
 
-  [0] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-1", floor=1.3456>
-  [1] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-2", floor=8.384680215243403>
-  [2] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-3", floor=2.5205438066465256>
-  [3] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-4", floor=18.194690265486727>
-  [4] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-5", floor=27.9856>
-  [5] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-6", floor=2.096829796585506>
-  [6] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-7", floor=0.0>
-  [7] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-8", floor=1.1907964601769911>
-  
-  [0] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-1", price=6.4567>
-  [1] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-4", price=0.9941592920353983>
-  [2] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-7", price=5.122112812297605>
-  [3] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-12", price=16.4567>
-  [4] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-25", price=8.368761061946904>
+    [0] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-1", floor=1.3456>
+    [1] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-2", floor=8.384680215243403>
+    [2] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-3", floor=2.5205438066465256>
+    [3] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-4", floor=18.194690265486727>
+    [4] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-5", floor=27.9856>
+    [5] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-6", floor=2.096829796585506>
+    [6] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-7", floor=0.0>
+    [7] = {AdParameters::PlacementStruct} #<struct AdParameters::PlacementStruct id="plc-8", floor=1.1907964601769911>
+    
+    [0] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-1", price=6.4567>
+    [1] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-4", price=0.9941592920353983>
+    [2] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-7", price=5.122112812297605>
+    [3] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-12", price=16.4567>
+    [4] = {AdParameters::CreativeStruct} #<struct AdParameters::CreativeStruct id="Video-25", price=8.368761061946904>
 
 The result as JSON shows that for every placement, only creatives with bigger prices are selected. 
 
