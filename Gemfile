@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+gem 'nokogiri'
+gem 'rack', '~> 2.2.4'
+gem 'rspec'
+gem 'google-protobuf', '~> 3.21', '>= 3.21.6'
